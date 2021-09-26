@@ -1,0 +1,35 @@
+@font-face {
+  font-family: "SansForgetica";
+  src: url("../fonts/SansForgetica-Regular.otf") format("opentype");
+}
+.word {
+  font-family: "SansForgetica";
+  font-size: 6em;
+}
+p {
+  margin: 0 auto;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+.query {
+  text-align: center;
+  margin: 0 auto;
+  position: relative;
+  border-radius: 5px;
+  border: 2px solid rgba(0, 0, 0, 0.342);
+  width: 230px;
+}
+.box {
+  text-align: center;
+}
+.body {
+  height: 460px;
+  display: flex;
+  justify-content: center; /* 水平居中 */
+  align-items: center; /* 垂直居中 */
+}
+* {
+  border: 0px solid white;
+}

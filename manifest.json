@@ -1,0 +1,43 @@
+{
+    "background": {
+        "persistent": true,
+        "scripts": [
+            "scripts/typing.js"
+        ]
+    },
+    "browser_action": {
+        "default_icon": "images/48.png",
+        "default_title": "fast-typing"
+    },
+    "options_page": "html/index.html",
+    "content_scripts": [
+        {
+            "js": [
+                "scripts/typing.js"
+            ],
+            "css": [
+                "styles/style.css"
+            ],
+            "matches": [
+                "<all_urls>"
+            ]
+        }
+    ],
+    "description": "练手速or记单词",
+    "icons": {
+        "16": "images/16.png",
+        "48": "images/48.png",
+        "128": "images/128.png"
+    },
+    "manifest_version": 2,
+    "name": "fast-typing",
+    "version": "1.0.0",
+    "permissions": [
+        "unlimitedStorage",
+        "webRequest",
+        "webRequestBlocking"
+    ],
+    "web_accessible_resources": [
+        "images/*"
+    ]
+}
