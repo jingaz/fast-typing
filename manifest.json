@@ -10,19 +10,6 @@
         "default_title": "fast-typing"
     },
     "options_page": "html/index.html",
-    "content_scripts": [
-        {
-            "js": [
-                "scripts/typing.js"
-            ],
-            "css": [
-                "styles/style.css"
-            ],
-            "matches": [
-                "<all_urls>"
-            ]
-        }
-    ],
     "description": "练手速or记单词",
     "icons": {
         "16": "images/16.png",
@@ -31,13 +18,5 @@
     },
     "manifest_version": 2,
     "name": "fast-typing",
-    "version": "1.0.0",
-    "permissions": [
-        "unlimitedStorage",
-        "webRequest",
-        "webRequestBlocking"
-    ],
-    "web_accessible_resources": [
-        "images/*"
-    ]
+    "version": "1.0.0"
 }
